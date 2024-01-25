@@ -1,7 +1,7 @@
 PURPOSE:
 
 The application's main purpose is to showcase my current abilities (my capabilities during the time this project was commited). 
-However, you can use my application for simple tasks such as having knowing what time of the day it is, what the date is, and placing an event/occasion of your liking (like birthdays) on specific dates.
+However, you can use my application for simple tasks such as knowing what time of the day it is, what the current date is, and placing an event/occasion of your liking (like birthdays) on specific dates.
 
 MAJOR FUNCTIONS:
 
