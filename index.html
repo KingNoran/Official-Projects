@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="calendar-container">
+        
+        <header>
+            <div id="year-container">
+                <div>
+                    <h1>eCalendar</h1>
+                    <h1 id="year"></h1>
+                </div>
+                <div class="clock-container">
+                    <div id="clock">12:00:00</div>
+                </div>
+            </div>
+            <nav id="month-container">
+                <ul id="months">
+                    <li>
+                        <span class="nav-arrow" id="previous">
+                            &lt;&lt;
+                        </span>
+                    </li>
+                    <li class="month previous">month</li>
+                    <li class="month current">month</li>
+                    <li class="month next">month</li>
+                    <li>
+                        <span class="nav-arrow" id="next">
+                            &gt;&gt;
+                        </span>
+                    </ul>
+            </nav>
+        </header>
+        <div class="calendar-body">
+            <ul id="calendar-days">
+                <li>SUN</li>
+                <li>MON</li>
+                <li>TUE</li>
+                <li>WED</li>
+                <li>THU</li>
+                <li>FRI</li>
+                <li>SAT</li>
+            </ul>
+            <ul id="calendar-dates">
+            </ul>
+        </div>
+    </section>
+
+    <!-- Event section -->
+    <section id="event-container">
+        <div id="showcase">
+            <div class="video-container">
+                <video src="../video/video.mp4" autoplay muted loop></video>
+            </div>
+            <header>
+                <h3 class="day"></h3>
+                <h1 class="date"></h1>
+            </header>
+            <div class="event-list-container">
+                <h1 class="header">Event List</h1>
+                <ul id="event-list">
+                    <!-- <li>
+                        <div class="date-spec">
+                            <p class="date">January</p>
+                            <p class="date">31</p>
+                        </div>
+                        <p>
+                            dolor sit amet consectetur adipisicing elit. Pariatur, debitis.
+                        </p>
+                    </li> -->
+                </ul>
+            </div>
+            <form id="add-event">
+                <section class="part1">
+                    <h1>Add Event</h1>
+                    <div class="msg invisible"></div>
+                    <div>
+                    <label for="month-add-event">Month</label>
+                    <input type="text" id="month-add-event" placeholder="Enter a month...">
+                    </div>
+                    <div>
+                    <label for="day-add-event">Day</label>
+                    <input type="text" id="day-add-event" placeholder="Enter a day...">
+                    </div>
+                    <input class="btn" type="submit" value="Submit">
+                    </section>
+                <section class="part2">
+                    <label for="description">Description</label>
+                    <textarea id="description" cols="100%" rows="10" placeholder="I want to..."></textarea>
+                </section>
+            </form>
+        </div>
+    </section>
+        
+    <script src="main.js">
+        
+    </script>
+</body>
+</html>
