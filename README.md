@@ -6,7 +6,7 @@ However, you can use my application for simple tasks such as having knowing what
 MAJOR FUNCTIONS:
 
 The application has a BUILT-IN CALENDAR on the left side of the page that automatically highlights the current date of the current month in strong colors, then the other dates of the current month in a lighter color.
-The inactive dates of inactive months, however, are highlighted in gray circles. You can traverse through the months using the arrows on the navigation, which are right on top of the calendar itself.
+The dates of inactive months, however, are highlighted in gray circles. You can traverse through the months using the arrows on the navigation, which are right on top of the calendar itself.
 
 Meanwhile, at the right side of the page is an EVENT LISTER. At the very top of the event-lister is the current day of the week as well as the current date in text form.
 Below that is the actual lists of events, where the elements are displayed via a container. When there's a certain number of elements, the list provides a scrollbar.
