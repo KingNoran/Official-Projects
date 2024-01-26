@@ -12,6 +12,10 @@ Meanwhile, at the right side of the page is an EVENT LISTER. At the very top of 
 Below that is the actual lists of events, where the elements are displayed via a container. When there's a certain number of elements, the list provides a scrollbar.
 You can ENTER AN EVENT using the form at the very bottom of the event lister.
 
+DEPENDENCIES:
+
+I used plain HTML, CSS, and Javascript. No external modules were used.
+
 BUILD AND DEPLOY INSTRUCTIONS:
 
 To build the application on your browser, simply download all the files in the repository. Then, open "index.html" on a browser.
