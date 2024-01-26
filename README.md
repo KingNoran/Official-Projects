@@ -5,7 +5,7 @@ However, you can use my application for simple tasks such as knowing what time o
 
 FILES USED:
 
-img//
+\nimg
   arrow.png/
   cover.png/
   daysky.jpg/
