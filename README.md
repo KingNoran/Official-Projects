@@ -1,3 +1,5 @@
+Note: The showcase of the event lister was supposed to be a video, but due to the file being too large, I had to settle for an image.
+<br />
 <h1>PURPOSE:</h1>
 
 The application's main purpose is to showcase my current abilities (my capabilities during the time this project was commited). 
