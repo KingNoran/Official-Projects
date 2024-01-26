@@ -5,6 +5,7 @@ However, you can use my application for simple tasks such as knowing what time o
 
 FILES USED:
 
+<pre>
 img/  
   arrow.png  
   cover.png  
@@ -14,6 +15,7 @@ img/
 index.html  
 style.css  
 main.js
+</pre>
 <br />
 
 <h1>MAJOR FUNCTIONS:</h1>
