@@ -45,3 +45,13 @@ I used plain HTML, CSS, and Javascript. No external modules were used.
 <h1>BUILD AND DEPLOY INSTRUCTIONS:</h1>
 
 To build the application on your browser, simply download all the files in the repository. Then, open "index.html" on a browser.
+
+<br />
+
+<h1><a src="https://kingnoran.github.io/eCalendar/">VISIT SITE</a></h1>
+
+<br />
+
+<h1>CHANGE HISTORY</h1>
+
+![image](https://github.com/KingNoran/eCalendar/assets/108130291/97e72031-95a7-488f-b094-198e108f3d51)
