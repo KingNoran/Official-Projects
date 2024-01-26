@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 :root{
     --primary-color: #30D5C8;
@@ -32,25 +27,31 @@
 /* Calendar Section */
 
 body{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 0.65fr 0.35fr;
+    height: 100vh;
     font-family: Tahoma, Arial, sans-serif;
-    color: #555;
-    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
 }
 
 .calendar-container{
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     background-color: transparent;
-    flex-basis: 70%;
-    padding: 15px;
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
     align-items: center;
     justify-content: center;
+    object-fit: cover;
 }
 
 .calendar-container header{
     color: var(--primary-color);
+    width: 80%;
 }
 
 .calendar-container header .clock-container{
@@ -59,7 +60,7 @@ body{
 
 .calendar-container header .clock-container #clock{
     color: var(--primary-color);
-    font-size: 7vh;
+    font-size: 4em;
 }
 
 .calendar-container header #year-container{
@@ -67,15 +68,21 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-basis: 100%;
+
 }
 
-.calendar-container header #year{
+.calendar-container header #year-container h1{
     font-weight: 300;
-    font-size: 300%;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.calendar-container header #year-container #year{
+    font-weight: bold;
 }
 
 .calendar-container header #month-container{
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 0.15rem solid #e1e1e1;
     flex-basis: 100%;
 }
 
@@ -86,10 +93,10 @@ body{
 .calendar-container header #months{
     display: flex;
     list-style: none;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
-    min-width: 100vh;
+    padding-top: 3rem;
+    max-width: 100%;
 }
 
 .calendar-container header .month{
@@ -104,7 +111,7 @@ body{
 
 .calendar-container header nav .nav-arrow{
     font-size: 200%;
-    letter-spacing: -10px;
+    letter-spacing: -0.6rem;
 }
 
 .calendar-container header nav .nav-arrow:hover{
@@ -112,7 +119,7 @@ body{
 }
 
 .calendar-container header nav img{
-    max-width: 35px;
+    max-width: 3.5rem;
 }
 
 .calendar-container header nav span:hover{
@@ -127,10 +134,16 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.calendar-body{
+    max-width: 100%;
+}
+
 .calendar-container #calendar-dates, 
 .calendar-container #calendar-days{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;   
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: auto;
+    padding: 0;   
 }
 
 .calendar-container #calendar-dates li.active{
@@ -155,18 +168,19 @@ body{
     display: flex;
     justify-content:space-around;
     align-items: center;
-    font-size: 0.8rem;
-    min-width: 70px;
-    min-height: 70px;
-    margin: 5px;
+    font-size: 0.8em;
+    min-width: 4em;
+    min-height: 4em;
+    margin: 0.5em;
 }
 
 
 /*Event section*/
 
 #event-container{
-    flex-basis: 40%;
+    flex-basis: 35%;
     background-color: skyblue;
+    max-height: 100vh;
 }
 
 #showcase{
@@ -174,7 +188,7 @@ body{
     height: 100vh;
     display:flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 2em;
 }
 
 .img-container{
@@ -184,12 +198,11 @@ body{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: no-repeat center center/cover;
 }
 
 .img-container img{
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     position: absolute;
     top: 50%;
@@ -203,33 +216,34 @@ body{
 }
 
 #showcase header{
-    margin-bottom: 70px;
-    margin-top: 10px;
-    padding: 20px;
+    margin-bottom: 4em;
+    margin-top: 1em;
+    padding: 0.5rem;
     background-color: rgba(0,0,0, 0.3);
     border-radius: 2cap;
 }
 
 #showcase header .day{
-    padding-bottom: 20px; 
+    padding-bottom: 0.5em; 
     font-weight: normal;
 }
 
 #showcase header .date{
     font-size: 5vh;
+    margin: 0.2em;
 }
 
 #showcase .event-list-container{
     border-radius: 10%;
-    padding: 40px;
-    height: 50%;
+    padding: 1em;
+    height: 20rem;
     background-color: rgba(0,0,0, 0.3);
 }
 
 #showcase .event-list-container h1.header{
     font-size: 3vh;
     font-weight: normal;
-    border-bottom: solid 5px rgba(0,0,0, 0.4);
+    border-bottom: solid 0.2em rgba(0,0,0, 0.4);
 }
 
 #showcase .event-list-container ul{
@@ -237,35 +251,41 @@ body{
     flex-direction: column;
     overflow: hidden;
     max-height: 90%;
-    padding-right: 20px;
+    padding-right: 0.5em;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 0.1em;
+}
+
+#showcase #event-list{
+    padding: 0;
+    max-height: 15rem;
 }
 
 #showcase .event-list-container li{
-    padding: 10px 0;
-    border-bottom: solid 1.5px rgba(0,0,0, 0.4);
+    padding: 0;
+    border-bottom: solid 0.1em rgba(0,0,0, 0.4);
     display: flex;
 }
 
 #showcase .event-list-container li .date{
     font-size: 3vh;
+    margin: 0.2em;
 }
 
 #showcase .event-list-container li .date-spec{
-    margin-right: 20px;
+    margin-right: 0.7rem;
 }
 
 #showcase form#add-event{
-    margin-top: 50px;
+    margin-top: 1em;
     background: rgba(0,0,0,0.3);
     border-radius: 2cap;
     display: flex;
-    padding: 10px;
+    padding: 0.5em;
 }
 
 #showcase form#add-event .part1{
-    margin-right: 10px;
+    margin-right: 0.5em;
 }
 
 #showcase form#add-event textarea{
@@ -274,29 +294,29 @@ body{
   
 #showcase form#add-event label {
     display: block;
-    padding: 10px 0;
+    padding: 0.5em 0;
 }
 
 #showcase form#add-event .btn {
     display: block;
-    padding: 10px 15px;
+    padding: 1em 1.5em;
     border: 0;
     background: #333;
     color: #fff;
-    border-radius: 5px;
-    margin: 5px 0;
-    padding: 10px;
-    margin-top: 10px;
+    border-radius: 0.5em;
+    margin: 0.5em 0;
+    padding: 1em;
+    margin-top: 1em;
 }
 
 .error{
-    padding: 5px;
+    padding: 0.5em;
     border-radius: 2cap;
     text-align: center;
     background: orangered;
     color: #fff;
-    padding: 5px;
-    margin: 5px;
+    padding: 0.5em;
+    margin: 0.5em;
 }
   
   .btn:hover {
@@ -307,7 +327,7 @@ body{
 /*Scroll css*/
     /* width */
     #showcase .event-list-container ul::-webkit-scrollbar {
-        width: 10px;
+        width: 0.5rem;
     }
     
     /* Track */
@@ -333,3 +353,113 @@ body{
         overflow-x: hidden;
     }
 }
+
+@media(max-width: 768px){
+    body{
+        display: inline-block;
+    }
+    .calendar-container{
+        width: 80%;
+        margin: 1rem;
+    }
+    .calendar-container header{
+        width: 100%;
+    }
+    .calendar-container header #months{
+        padding: 0;
+        margin: 0.5rem;
+        border: 0;
+        justify-content: center;
+    }
+    
+    .calendar-container header .clock-container{
+        position: relative;
+    }
+
+    #showcase{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .event-list-container{
+        margin: 0;
+        padding: 2rem;
+        border: 0;
+    }
+}
+
+@media(max-width: 1068px){
+
+    body{
+        display: block;
+        max-height: 100%;
+    }
+    .calendar-container{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .calendar-container header{
+        width: 100%;
+    }
+    .calendar-container header ul #months{
+        padding: 0;
+        margin: 0;
+        border: 0;
+        width: 10%;
+        justify-content: center;
+    }
+    
+    .calendar-container header .clock-container{
+        position: relative;
+    }
+
+    .event-list-container{
+        margin: 0;
+        padding: 2rem;
+        border: 0;
+    }
+
+    .img-container{
+        width: 100%;
+        height: 100%;
+    }
+
+    
+    #event-container{
+        flex-basis: 35%;
+        background-color: skyblue;
+        max-height: 100vh;
+    }
+    
+    #showcase{
+        position: relative;
+        height: 100%;
+        display:flex;
+        flex-direction: column;
+        padding: 2em;
+    }
+    
+    .img-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .img-container img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
