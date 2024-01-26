@@ -1,9 +1,11 @@
-PURPOSE:
+<h1>PURPOSE:</h1>
 
 The application's main purpose is to showcase my current abilities (my capabilities during the time this project was commited). 
 However, you can use my application for simple tasks such as knowing what time of the day it is, what the current date is, and placing an event/occasion of your liking (like birthdays) on specific dates.
 
-MAJOR FUNCTIONS:
+<br />
+
+<h1>MAJOR FUNCTIONS:</h1>
 
 The application has a BUILT-IN CALENDAR on the left side of the page that automatically highlights the current date of the current month in strong colors, then the other dates of the current month in a lighter color.
 The dates of inactive months, however, are highlighted in gray circles. You can traverse through the months using the arrows on the navigation, which are right on top of the calendar itself.
@@ -12,10 +14,14 @@ Meanwhile, at the right side of the page is an EVENT LISTER. At the very top of 
 Below that is the actual lists of events, where the elements are displayed via a container. When there's a certain number of elements, the list provides a scrollbar.
 You can ENTER AN EVENT using the form at the very bottom of the event lister.
 
-DEPENDENCIES:
+<br />
+
+<h1>DEPENDENCIES:</h1>
 
 I used plain HTML, CSS, and Javascript. No external modules were used.
 
-BUILD AND DEPLOY INSTRUCTIONS:
+<br />
+
+<h1>BUILD AND DEPLOY INSTRUCTIONS:</h1>
 
 To build the application on your browser, simply download all the files in the repository. Then, open "index.html" on a browser.
