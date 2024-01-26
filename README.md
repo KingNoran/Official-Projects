@@ -48,7 +48,7 @@ To build the application on your browser, simply download all the files in the r
 
 <br />
 
-<h1><a src="https://kingnoran.github.io/eCalendar/">VISIT SITE</a></h1>
+<h1>VISIT SITE</h1> --> <a src="https://kingnoran.github.io/eCalendar/">Link to site</a>
 
 <br />
 
