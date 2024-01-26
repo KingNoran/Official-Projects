@@ -5,15 +5,15 @@ However, you can use my application for simple tasks such as knowing what time o
 
 FILES USED:
 
-\nimg
-  arrow.png/
-  cover.png/
-  daysky.jpg/
-  nightsky.avif/
-  nightsky2.jpg/
-index.html/
-style.css/
-main.js/
+img/  
+  arrow.png  
+  cover.png  
+  daysky.jpg  
+  nightsky.avif  
+  nightsky2.jpg  
+index.html  
+style.css  
+main.js
 <br />
 
 <h1>MAJOR FUNCTIONS:</h1>
