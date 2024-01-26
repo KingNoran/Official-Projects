@@ -37,7 +37,6 @@ body{
     font-family: Tahoma, Arial, sans-serif;
     color: #555;
     min-height: 100vh;
-    overflow: hidden;
 }
 
 .calendar-container{
