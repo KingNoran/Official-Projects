@@ -36,6 +36,34 @@ You can ENTER AN EVENT using the form at the very bottom of the event lister.
 
 <br />
 
+<h1>FILES</h1>
+
+<ol>
+  <li>
+    <h3>img</h3>
+    This is the image folder. It contains the images used in both the background of the event lister and the navigation arrows. The other files [nightsky, nightsky2, daysky] could be used as alternatives to the current cover image.
+  </li>
+  <li>
+    <h3>index.html</h3>
+    This is the main page of the web-application. It has 3 meta tags: 
+    <ul>
+      <li>Sets the charset to UTF-8</li>
+      <li>Sets the webpage to fit in mobile devices by setting the viewport to the device-width and a fixed initial-scale of 1</li>
+      <li>Renders the internet explorer to IE-8(standard view)</li>
+    </ul>
+    It has 2 main parts:
+    <ul>
+      <li>
+        <h3>The Calendar</h3>
+        This is the part of the webpage where the actual calendar is in place. In its header is the current year, current time, as well as the navigation arrows which you can use to traverse through previous and proceeding months. In its body are the dates of the                current month.
+      </li>
+      
+    </ul>
+  </li>
+</ol>
+
+<br />
+
 <h1>DEPENDENCIES:</h1>
 
 I used plain HTML, CSS, and Javascript. No external modules were used.
