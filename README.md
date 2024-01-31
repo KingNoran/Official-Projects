@@ -54,11 +54,22 @@ You can ENTER AN EVENT using the form at the very bottom of the event lister.
     It has 2 main parts:
     <ul>
       <li>
-        <h3>The Calendar</h3>
-        This is the part of the webpage where the actual calendar is in place. In its header is the current year, current time, as well as the navigation arrows which you can use to traverse through previous and proceeding months. In its body are the dates of the                current month.
+        <h4>The Calendar</h4>
+        This is the part of the webpage where the actual calendar is in place. In its header is the current year, current time, as well as the navigation arrows which the user can use to traverse through previous and proceeding months. In its body are the dates of the current month.
       </li>
-      
+      <li>
+        <h4>The Event Lister</h4>
+        The smaller part of the webpage where the user can set events for himself/herself. In its header is the current date, as well as the day of the week. In its body are the lists of events which provides a scrollbar should the elements overflow. Finally, at the very bottom of the page is a form that the user can use to set events for himself/herself. Once filled, the event shows up in the body as mentioned.
+      </li>
     </ul>
+  </li>
+  <li>
+    <h3>styles.css</h3>
+    This is the file where the styles of the webpage are stored. The primary color is turquoise and the secondary color is a pale version of cyan.
+  </li>
+  <li>
+    <h3>main.js</h3>
+    The language used for the backend part of the web-app is Javascript. I mostly used the Date module to retrieve data.
   </li>
 </ol>
 
